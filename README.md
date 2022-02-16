@@ -1,4 +1,4 @@
-# Astro + Solid.js Example
+# Astro + Solid.js + WindiCSS Example
 
 ```
 npm init astro -- --template framework-solid
