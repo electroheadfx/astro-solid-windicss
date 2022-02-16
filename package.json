@@ -1,0 +1,17 @@
+{
+  "name": "@example/framework-solid",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/renderer-solid": "^0.3.1",
+    "astro": "^0.22.20",
+    "vite-plugin-windicss": "^1.7.0",
+    "windicss": "^3.4.3"
+  }
+}

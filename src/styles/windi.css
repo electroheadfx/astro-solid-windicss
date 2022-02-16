@@ -1,0 +1,3 @@
+main {
+  @apply rounded-lg border-2 border-orange-300 p-16 bg-teal-800;
+}

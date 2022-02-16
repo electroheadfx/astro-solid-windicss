@@ -1,0 +1,33 @@
+---
+
+// src/layouts/BaseLayout.astro
+const {title} = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <style global>
+      @import "../styles/global.css";
+      @import "../styles/home.css";
+    </style>
+
+    <script type="module" src={Astro.resolve('../windicss.ts')}></script>
+
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        max-width: min(100%, 68ch);
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
